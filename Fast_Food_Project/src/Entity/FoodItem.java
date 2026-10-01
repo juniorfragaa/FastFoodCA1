@@ -1,9 +1,11 @@
+package Entity;
+
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 
-public class FastFood {
+public class FoodItem {
 
     // Keeping private access modifiers for achieving Encapsulation(Keep fields private+ Add through Constructor + Get from Getters)
     private String name;
@@ -12,7 +14,7 @@ public class FastFood {
     private LocalDateTime addedTime;
 
     //Constructor to add the values to the fields
-    FastFood(String name, double weight, LocalDate bestBefore, LocalDateTime addedTime){
+    FoodItem(String name, double weight, LocalDate bestBefore, LocalDateTime addedTime){
      this.name=name;
     this.weight=weight;
     this.bestBefore=bestBefore;
